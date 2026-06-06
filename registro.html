@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que Bootstrap sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña -->
+    <title>Crear Cuenta</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+</head>
+
+<!-- bg-light = fondo gris claro -->
+ 
+<body class="bg-light">
+
+    <!--
+        container = contenedor principal centrado
+        mt-5 = margen superior grande
+    -->
+    <div class="container mt-5">
+
+        <!--
+            row = fila Bootstrap
+
+            justify-content-center =
+            centra el contenido horizontalmente
+        -->
+        <div class="row justify-content-center">
+
+            <!--
+                col-md-6 =
+                ocupa 6 de 12 columnas
+                (la mitad de la pantalla)
+            -->
+            <div class="col-md-6">
+
+                <!--
+                    card = tarjeta Bootstrap
+
+                    shadow = agrega sombra
+                -->
+                <div class="card shadow">
+                    
+                    <!-- ========================= -->
+                    <!-- LOGO / IDENTIDAD -->
+                    <!-- ========================= -->
+
+                    <div class="text-center mb-4">
+
+                        <!-- Imagen principal -->
+                        <img
+                        src="img/transportes.png"
+                        class="img-fluid mb-3"
+                        style="height: 180px; margin-right: 10px;"
+                        alt="CityDrive">
+
+                        <!-- Nombre de la app -->
+                        <h1
+                        class="fw-bold text-dark">
+
+                            CityDrive
+
+                        </h1>
+
+                        <!-- Descripción -->
+                        <p
+                        class="text-secondary">
+
+                            Gestiona mototaxis, taxis y buses
+                            desde una sola plataforma.
+
+                        </p>
+
+                    </div>
+
+                    <!--
+                        card-body = contenido interno
+
+                        p-4 = padding grande
+                    -->
+                    <div class="card-body p-4">
+
+                        <!-- Título -->
+                        <h2 class="text-center mb-5 fw-bold">
+                            Crear Cuenta
+
+                        </h2>
+
+                        <!-- ========================= -->
+                        <!-- NOMBRE COMPLETO -->
+                        <!-- ========================= -->
+
+                        <div class="form-floating mb-3">
+
+                            <input
+                                id="nombre"
+                                type="text"
+                                class="form-control"
+                                placeholder="Ingrese su nombre completo">
+
+                              <label for="nombre">
+
+                                Nombre Completo
+                            </label>
+
+                        </div>
+
+                        <!-- ========================= -->
+                        <!-- CORREO -->
+                        <!-- ========================= -->
+
+                        <div class="form-floating mb-3">
+
+                            <input
+                                id="correo"
+                                type="email"
+                                class="form-control"
+                                placeholder="ejemplo@correo.com">
+                            
+                            <label for="correo">
+                                Correo Electrónico
+                            </label>
+                        </div>
+
+                        <!-- ========================= -->
+                        <!-- CONTRASEÑA -->
+                        <!-- ========================= -->
+
+                        <div class="form-floating mb-3">
+
+                            <input
+                                id ="password"
+                                type="password"
+                                class="form-control"
+                                placeholder="Ingrese su contraseña">
+                            
+                            <label for="password">
+                                Contraseña
+                            </label>
+
+                        </div>
+
+                        <!-- ========================= -->
+                        <!-- CONFIRMAR CONTRASEÑA -->
+                        <!-- ========================= -->
+
+                        <div class="form-floating mb-3">
+
+                     
+                            <input
+                                id="confirmPassword"
+                                type="password"
+                                class="form-control"
+                                placeholder="Confirme su contraseña">
+
+                                   <label for="confirmPassword">
+                                Confirmar Contraseña
+                            </label>
+
+                        </div>
+
+                        <!-- ========================= -->
+                        <!-- ROL -->
+                        <!-- ========================= -->
+
+                        <div class="mb-3">
+                            <!--
+                                form-select =
+                                select con estilo Bootstrap
+                            -->
+
+                            <select 
+                               id="rol"
+                                class="form-select">
+
+                     <option value="" disabled>
+                        Seleccione un rol
+                        </option>
+
+                        <option>
+                            Conductor
+                        </option>
+
+                        <option>
+                            Administrador
+                        </option>
+
+
+                            </select>
+                            
+                        
+                        </div>
+
+                        <!-- ========================= -->
+                        <!-- BOTÓN CREAR CUENTA -->
+                        <!-- ========================= -->
+
+                        <button
+                            id="btnCrearCuenta"
+                            class="btn btn-success w-100 mb-3">
+
+                            Crear Cuenta
+
+                        </button>
+
+                        <!-- ========================= -->
+                        <!-- TEXTO CENTRADO -->
+                        <!-- ========================= -->
+
+                        <p class="text-center">
+
+                            ¿Ya tienes una cuenta?
+
+                        </p>
+
+                        <!-- ========================= -->
+                        <!-- VOLVER AL LOGIN -->
+                        <!-- ========================= -->
+
+                        <a
+                            href="index.html"
+                            class="btn btn-primary w-100">
+
+                            Volver al Login
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- JavaScript del registro -->
+
+<script
+type="module"
+src="js/registro.js">
+</script>
+
+</body>
+
+
+</html>

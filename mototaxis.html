@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Registrar Mototaxi</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <nav class="navbar bg-white shadow-sm">
+
+    <div class="container-fluid">
+          <div class="d-flex align-items-center">
+
+            <img
+            src="img/transportes.png"
+            alt="CityDrive"
+            style="height: 50px; margin-right: 12px;">
+
+            <span
+            class="navbar-brand mb-0 fs-3 fw-bold text-dark">
+
+                City<span class="text-success">Drive</span>
+
+            </span>
+
+       </div>
+
+        <a
+        href="dashboard.html"
+        class="btn btn-secondary">
+
+            Volver
+
+        </a>
+
+    </div>
+    </div>
+
+</nav>
+
+
+<div class="container mt-5">
+
+    <div class="card shadow rounded-4">
+
+        <div class="card-body p-4">
+
+            <h1
+            class="text-center fw-bold">
+
+                🛺 Registrar Mototaxi
+
+            </h1>
+
+            <hr>
+
+            <!-- DATOS PROPIETARIO -->
+
+    <h4 class="fw-bold mb-4">
+                Datos del Propietario
+
+            </h4>
+
+            <!-- Nombre + DPI -->
+
+<div class="row">
+
+    <!-- Nombre -->
+
+    <div class="col-md-6">
+
+        <div class="form-floating mb-3">
+
+            <input
+            id="nombreCompleto"
+            type="text"
+            class="form-control"
+            placeholder="Nombre">
+
+            <label>
+                Nombre Completo
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- DPI -->
+
+    <div class="col-md-6">
+
+        <div class="form-floating mb-3">
+
+            <input
+            id="dpi"
+            type="text"
+            class="form-control"
+            placeholder="DPI">
+
+            <label>
+                DPI
+            </label>
+
+        </div>
+
+    </div>
+
+</div>
+            <div class="form-floating mb-3">
+
+                <input
+                id="domicilio"
+                type="text"
+                class="form-control"
+                placeholder="Domicilio">
+
+                <label>
+                    Domicilio
+                </label>
+
+            </div>
+
+            <hr>
+
+            <!-- DATOS MOTOTAXI -->
+
+<div class="row">
+
+    <!-- Nombre -->
+
+    <div class="col-md-6">
+
+        <div class="form-floating mb-3">
+
+            <input
+            id="modelo"
+            type="text"
+            class="form-control"
+            placeholder="Modelo">
+
+            <label>
+                Modelo
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- DPI -->
+
+    <div class="col-md-6">
+
+        <div class="form-floating mb-3">
+
+            <input
+            id="color"
+            type="text"
+            class="form-control"
+            placeholder="Color">
+
+            <label>
+                Color
+            </label>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <div class="mb-3">
+
+                <select
+                id="seguroVida"
+                class="form-select">
+
+                    <option selected disabled>
+                        Seguro de Vida
+                    </option>
+
+                    <option>
+                        Sí
+                    </option>
+
+                    <option>
+                        No
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <select
+                id="municipio"
+                class="form-select">
+
+                    <option selected disabled>
+                        Municipio
+                    </option>
+
+                    <option>
+                        San Mateo
+                    </option>
+
+                    <option>
+                        San Pedro
+                    </option>
+
+                    <option>
+                        San Juan
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button
+            id="btnRegistrarMototaxi"
+            class="btn btn-success w-100">
+
+                Registrar Mototaxi
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script
+type="module"
+src="js/mototaxis.js">
+</script>
+
+</body>
+
+</html>
